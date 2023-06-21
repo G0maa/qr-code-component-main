@@ -1,0 +1,80 @@
+/* https://stackoverflow.com/questions/12316501/including-google-fonts-link-or-import */
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.main-dev {
+  border-radius: 1vw;
+  margin: auto;
+  margin-top: 10vh;
+  width: 25vw;
+}
+
+img {
+  border-radius: 1vw;
+  width: 25vw;
+}
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media screen and (max-width: 768px) {
+  .main-dev {
+    border-radius: 3vw;
+    width: 75vw;
+  }
+
+  img {
+    border-radius: 3vw;
+    width: 75vw;
+  }
+}
+
+/* Me re-inventing Tailwind */
+
+.white-background {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.gray-text {
+  color: hsl(220, 15%, 55%);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.decorations {
+  padding: 3vh;
+}
+
+.big-font {
+  font-size: 2em;
+  text-align: center;
+}
+
+.small-font {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 1vh;
+
+  /* https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e */
+  transform: translateX(-50%);
+}
+
+a:link,
+a:hover {
+  color: hsl(220, 15%, 35%);
+  text-decoration: none;
+}
+
+a:active {
+  color: hsl(220, 15%, 0%);
+}
